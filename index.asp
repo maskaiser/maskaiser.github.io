@@ -4,7 +4,7 @@
 <%
 set conn=Server.CreateObject("ADODB.Connection")
 conn.Provider="Microsoft.Jet.OLEDB.4.0"
-conn.Open "c:/webdata/northwind.mdb"
+conn.Open "C:\Users\mason\OneDrive\Desktop\maskaiser.github.io\Weaver.accdb"
 %>
 <!DOCTYPE html>
 
