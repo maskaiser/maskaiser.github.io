@@ -3,7 +3,7 @@
 <!--#INCLUDE File="ADOVBS.INC"-->
 <%
 set conn=Server.CreateObject("ADODB.Connection")
-conn.Provider="Microsoft.Jet.OLEDB.4.0"
+conn.Provider="github"
 conn.Open "C:\Users\mason\OneDrive\Desktop\maskaiser.github.io\Weaver.accdb"
 %>
 <!DOCTYPE html>
