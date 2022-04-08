@@ -10,72 +10,46 @@
     <div id="photo-banner">
         <img src="Weaver_Banner.jpg" />
     </div>
+    <div id="ReqTable" class="column" style="float:left; display: inline-block; padding: 10px;">
+        <table>
+            <tr>
+                <!--This is the header row-->
+                <th>Organization</th>
+                <th>Control Name</th>
+                <th>Requirement</th>
+                <th>Requirement ID</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="lines" styles="width:33.33%;">
+
+    </div>
+    <div id="EquTable" class="column" style="float: right; display:inline-block; padding: 10px;">
+        <table>
+            <tr>
+                <!--This is the header row-->
+                <th>Organization</th>
+                <th>Control Name</th>
+                <th>Requirement</th>
+                <th>Equivalent ID</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
     <div>
-        <h2>Standards Mapping</h2>
-        <div class="row">
-            <div class="column" style="background-color: #76ff7a; float: left; width: 33.33%; padding: 10px; height: 300px;
-">
-                <h2>Internal Controls</h2>
-                <p id="controls"></p>
-                <script>
-    let lefttext = "";
-                    let i = 0
-                    const internalcontrols = ["Wear blue hat", "Wear grey socks", "Wear red shoes"];
-                    internalcontrols.forEach(writetoleft);
-                    document.getElementById("controls").innerHTML = lefttext;
-                    function writetoleft(controlvalue, controlindex) {
-                        lefttext += controlvalue + ` (position is ${11 * i++})` + "<br>";
-                    }</script>
-            </div>
-            <div class="column" style="background-color: #bbb; float: left; width: 33.33%; padding: 10px; height: 300px;
-">
-                <h2>Equivalency</h2>
-                <svg viewBox="-50 -50 100 100"
-  <g id="center" fill="blue" stroke="blue">
-  <line id="programmaticline" x1="-50" y1="-50" x2="100" y2="-50" style="stroke:rgb(255,0,0);stroke-width:2">
-  </g>
-    <script>
-        <![CDATA[
-const SVG_XLINK = "http://www.w3.org/1999/xlink";
-const SVG_NS = 'http://www.w3.org/2000/svg';
-function reuse(used,parent,i) {
-let use = document.createElementNS(SVG_NS, 'use');
-use.setAttributeNS(SVG_XLINK, 'xlink:href', used); use.setAttributeNS(null,"transform" ,`translate(0,${11*i})`);
-parent.appendChild(use);
-}
-for(let i = 0;i < internalcontrols.length; i++ ){
-position=((11*i)-72);
-internalcontrols.coords=[-50,-50,100,-33];
-reuse("#programmaticline",document.querySelector("#center"),i);
-programmaticline.setAttribute('x1', internalcontrols.coords[0]);
-programmaticline.setAttribute('y1', internalcontrols.coords[1]);
-programmaticline.setAttribute('x2', internalcontrols.coords[2]);
-programmaticline.setAttribute('y2', position);
-}
-        ]]>
- </script>
-</svg>
-            </div>
-            <div class="column" style="background-color:#00CC00; float: left; width: 33.33%; padding: 10px; height: 300px;">
-                <h2>Other Controls</h2>
-                <p id="othercontrols"></p>
-                <script>
-        let righttext = "";
-                let j = 0
-                const CISNISTcontrols = ["Wear hat", "Wear socks", "Wear shoes"];
-                CISNISTcontrols.forEach(writetoright);
-                document.getElementById("othercontrols").innerHTML = righttext;
-                function writetoright(othercontrolvalue, othercontrolindex) {
-                    position = 11 * j++;
-                    righttext += othercontrolvalue + ` (position is ${position})` + "<br>";
-                }</script>
-            </div>
-        </div>
-
-
+        <img src="Weaver_Footer.jpg" style="width:100%; padding-top:35px;" />
     </div>
-    <div id="footer">
+    <!--<div id="footer">
         <img src="Weaver_Arrow.png" />
-    </div>
+    </div>-->
 </body>
 </html>
