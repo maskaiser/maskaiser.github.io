@@ -1,7 +1,11 @@
 ﻿<%@ Language=VBScript %>
 <% Response.Buffer = True %>
 <!--#INCLUDE File="ADOVBS.INC"-->
-
+<%
+set conn=Server.CreateObject("ADODB.Connection")
+conn.Provider="Microsoft.Jet.OLEDB.4.0"
+conn.Open "c:/webdata/northwind.mdb"
+%>
 <!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
