@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<%@ Language=VBScript %>
+<% Response.Buffer = True %>
+<!--#INCLUDE File="ADOVBS.INC"-->
+
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
